@@ -1,0 +1,19 @@
+
+div.content {
+    width: 800px;
+    height: 800px;
+    border: 15px solid white;
+    padding: 0px;
+    margin: 20px;
+    background-color: green;
+}
+
+.header {
+    width: 1325px;
+
+    padding: 15px;
+    text-align: center;
+    background: red;
+    color: white;
+    font-size: 20px;
+}
