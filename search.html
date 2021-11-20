@@ -1,0 +1,59 @@
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/ccab4e/system/app/themes/opensky/standard-css-opensky-ltr-ltr.css">
+
+
+<link rel="stylesheet" type="text/css" href="search.css">
+
+
+<link rel="stylesheet" type="text/css" href="sidebar.css">
+
+	<div class="sidebar">
+		<a  href="index.html">Home</a>
+		<a  href="zestty.game.html">Games</a>
+		<a href="zestty.upcoming.html">Upcoming</a>
+		<a href="zestty.contact.html">Contact</a>
+		<a href="zestty.about.html">About</a>
+		<a class="active" href="#search">search</a>
+	</div>
+    
+<br>
+<br>
+<br>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+<center>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for games..">
+
+<ul id="myUL">
+  <li><a href="1v1.html">1v1 lol</a></li>
+  <li><a href="https://tuckercraig.com/dino/">Dino</a></li>
+
+  <li><a href="drifthunters.html">Drift Hunters</a></li>
+  <li><a href="https://scratch.mit.edu/projects/544213416/fullscreen/">Slither io</a></li>
+
+  <li><a href="https://glebbahmutov.com/2048/">2048</a></li>
+  <li><a href="https://28klotlucas2.github.io/Funkin-Html5/">FNF</a></li>
+ 
+</ul> 
+</div>
+</center>
